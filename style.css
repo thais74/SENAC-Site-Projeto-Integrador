@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+}
+html {scroll-behavior: smooth;}
+
+body{
+    width: 95%; 
+    margin: auto;
+    /* background-color: #9decd6; */
+    box-shadow: 1px 1px 20px gray;
+    
+}
+
+.teste {
+    background-color:rgb(138, 68, 68);
+    
+}
+
+p{
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.5rem;
+    padding: 10px;
+    font-weight: 500;
+    color: #f7be19;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #f7be19;
+}
+
+i{
+    color: red;
+}
+
+/* ===================Menu==================== */
+.topo{
+    width: 100%;
+    height: 100px;
+    height: 600px;
+    position: relative;
+}
+
+
+.img-topo{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.img-topo img{
+    width: 100%;
+}
+
+.menu-completo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    padding: 0 20px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.menu ul li a{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+a:after{
+    content: "";
+    position: absolute;
+    background-image: url(imagens/pet.png);
+    background-size: cover;
+    height: 20px;
+    bottom: 0;
+    right: 30%;
+    
+}
+
+.menu ul li a:hover{
+    color: #f7be19;
+    transition: 0.3s;
+
+}
+
+a:hover:after{
+ width: 20px;
+
+}
+
+.logo{
+    margin-top: 25px;
+    text-align: center;
+    width: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo p{
+    color: white;
+}
+.logo img{
+    width: 100%;
+}
+
+.icones{
+    width: 10%; 
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sociais{
+    padding: 0 10px;
+}
+/* =====================//======================= */
+
+
+/* Primeiro bloco */
+
+.texto-1{
+    margin-left: 100px;
+    width: 48%;
+    color: white;
+}
+
+.texto-1 h1{
+    text-align: left;
+    font-size: clamp(1rem, 10vw, 5rem);
+}
+
+.texto-1 p{
+    font-size: 25px;
+}
+
+span{
+    color: #f7be19;
+}
+
+
+
+/* segundo bloco */
+
+.bloco-2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    background-color: rgb(238, 232, 232);
+    background-image: url(imagens/paws.png);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+    background-position-y: 250px;
+    background-color: white;
+}
+
+.texto-2{
+    padding: 10px;
+    width: 800px;
+}
+
+.texto-2 p{
+    font-weight: 500;
+}
+
+.img-bloco-2{
+    width: 515px;
+    height: 415px;
+    padding: 15px;
+}
+
+.img-bloco-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    /* border-radius: 50% 80% 60% 70%; */
+    box-shadow: 0px 15px 50px #e9cc76;
+   
+}
+
+
+/* terceiro bloco */
+.bloco-3{
+    background-color: rgb(238, 232, 232);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bloco-3 h2{
+    color: #f7be19;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#cuidados{
+    width: 500px;
+    padding: 20px 20px;
+}
+
+#cuidados img{
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 1px 1px 20px gray;
+}
+
+#cuidados, p{
+    font-size: 1.5rem;
+}
+
+
+/*=============footer============================= */
+
+.logo-rodape{
+    width: 200px;
+    text-align: center;
+}
+
+#img-rodape{
+    margin: auto;
+}
+
+footer{
+    background-color: rgb(78, 75, 75);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contato{
+    text-align: center;
+    width: 240px;
+    vertical-align: middle;
+    padding-bottom: 50px;
+    
+}
+
+.links-contatos{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.links-contatos a{
+    color: white;
+}
+.contato img{
+    vertical-align: middle;
+}
+
+.voluntariado{
+    text-align: center;
+}
+
+
+/* css formulario */
+.container {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input, textarea {
+    margin: 1em 0 1em 0;
+    width: 300px;
+    position: relative;
+  }
+  
+  .input input, textarea {
+    font-size: 100%;
+    padding: 0.7em;
+    outline: none;
+    color: #e8e8e8;
+    border: none;
+    border-bottom: 2px solid #e8e8e8;
+    background: transparent;
+    border-radius: none;
+    width: 100%;
+    resize: none;
+  }
+  
+  .input label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    color: #e8e8e8;
+    padding: 0.7em;
+    margin-left: 0.1em;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+  }
+  
+  .input :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    padding: 0.4em;
+    background: transparent;
+  }
+  
+  .input textarea:focus ~ label,
+  .input textarea:valid ~ label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    padding: 0.4em;
+    background: transparent;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(37, 37, 211);
+  }
+  
+  .form button {
+    color: #e8e8e8;
+    font-size: 15px;
+    align-self: flex-start;
+    padding: 0.6em;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .form button:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .form button:hover:before {
+    opacity: 0.2;
+  }
+  
+  .form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+
+/* ================================== pagina adote ====================== */
+
+#menu-2{
+    background-color: rgb(138, 68, 68);
+}
+
+.adocao{
+    background-color: rgb(238,232,232);
+    padding-top: 40px;
+}
+.adocao h1{
+    color: #f7be19; 
+}
+
+#cards{
+    width: 400px;
+    padding: 20px 20px;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+#cards img{
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 1px 1px 20px gray;
+}
+
+#cards, p{
+    font-size: 1.5rem;
+}
+
+.cont-cuidados{
+    background-color: white;
+    box-shadow: 1px 1px 20px gray;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 35px; 
+}
+
+.cont-cuidados h3{
+    color: #f7be19;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cont-cuidados h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#btn-adote{
+    margin-top: 25px;
+    margin-left: 230px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: none;
+   background-color: #f7be19;
+   cursor: pointer;
+   box-shadow: 1px 1px 10px gray;
+}
+
+#btn-adote:hover{
+    background-color: rgb(208, 241, 61);
+    scale: 1.2;
+}
+
+#btn-doe:hover{
+    background-color: rgb(208, 241, 61);
+    scale: 1.2;
+}
+/* =========================Fim Adote============================ */
+
+
+/* ===================================Doe======================== */
+#testando{
+   align-items: center;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-doe{
+    margin-top: 25px;
+    /* margin-left: 330px; */
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: none;
+   background-color: #f7be19;
+   cursor: pointer;
+   box-shadow: 1px 1px 10px gray;
+}
+
+    
+
+@media screen and (max-width: 650px) {
+    
+    .icones{
+        display: none;
+    }
+
+    p{
+        font-size: 1.3rem;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+    .topo{
+        height: 460px;
+    }
+
+    .menu-completo{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    .logo{
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .logo p{
+        font-size: 0.5rem;
+    }
+    .menu{
+
+        padding-top: 29px;
+    }
+
+    .menu ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    .menu ul li{
+        padding: 0 4.5px;
+    }
+
+    .menu ul li a{
+        font-size: 0.8rem;
+        display: flex;
+        font-weight: bold;
+    }
+
+
+    .texto-1{
+        position: relative;
+        left: 150px;
+        width: 48%;
+        color: white;
+        margin-top: -300px;
+        margin-left: -125px;
+    }
+    
+    .texto-1 h1{
+        font-size: 1rem;
+    }
+
+    
+    .bloco-2{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 0;
+    }
+
+    .img-bloco-2{
+        width: 350px;
+        height: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 1599px){
+    .texto-1{
+        position: relative;
+        left: 150px;
+        width: 48%;
+        color: white;
+        margin-top: -300px;
+        margin-left: -60px;
+    }
+}

@@ -1,0 +1,7 @@
+cores:
+
+cor de fundo
+#9decd6
+
+cor de algumas letras e botoes
+#f7be19
